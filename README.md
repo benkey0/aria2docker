@@ -2,7 +2,7 @@
 
 Very small docker container running aria2 with RPC connection open.
 
-- Runs on Raspberry Pi !
+**- Runs on Raspberry Pi !**
 
 Docker Image Repo : https://hub.docker.com/r/benkey0/aria2docker
 
@@ -21,4 +21,11 @@ services:
     restart: unless-stopped
 ```
 
+**Note : Current Secret Key is "mysecret"**
 
+Todo :
+
+- Add Env for secret
+- Allow customer .conf file
+- Expose more settings as Env for easy deployment
+- Add comments to example .conf
