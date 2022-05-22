@@ -1,13 +1,13 @@
 name: Push To docker
 on: [push] 
-
 env:
   DOCKER_USER: ${{secrets.DOCKER_USER}}
   DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
   REPO_NAME: ${{secrets.REPO_NAME}}
-  jobs:  
+  
+jobs:  
   push-image-to-docker-hub:  
-  runs-on: ubuntu-latest  # 
+    runs-on: ubuntu-latest  # 
     steps:
     - uses: actions/checkout@v2 # first action : checkout source code
     - name: docker login
